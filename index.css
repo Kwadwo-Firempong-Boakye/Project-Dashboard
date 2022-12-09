@@ -1,6 +1,11 @@
 :root {
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
+    --dash-blue: #282b68;
+    --dash-logos: #ffffff;
+    --dash-title: #fff;
+    --dash-text: #1eafff;
+    --dash-main-logo: #1eafff;  
 }
 
 body {
@@ -10,7 +15,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
     height: 100vh;
 }
@@ -23,28 +28,39 @@ body {
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background: #fff;
-    border-right: 3px solid #efd9eb;
+    background: var(--dash-blue);
+    border-right: 3px solid #ccc;
     display: grid;
-    grid-template-rows: 1fr 5fr 5fr;
-    gap: 20px;
-    font-size: 18px;
+    grid-template-rows: 1fr 4fr 5fr;
+    gap: 10px;
+    font-size: 20px;
 }
 
 .dash-title {
     font-weight: bold;
-    font-size: 20px;
-    color: #933982;
+    font-size: 24px;
+    color: var(--dash-title);
 }
 
 .material-symbols-outlined {
-    color: #ad549d;
+    color: var(--dash-logos);
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.logo-symbol {
+    color: var(--dash-main-logo);
 }
 
 .logo, 
 .group-one,
 .group-two {
     padding-left: 30px;
+    padding-right: 30px;
+    color: var(--dash-text);
 }
 
 .logo,
@@ -57,5 +73,5 @@ body {
 .projects {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background: #f6f1f5;
+    background: #e2e8f0;
 }
