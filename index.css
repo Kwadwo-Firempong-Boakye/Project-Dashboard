@@ -1,7 +1,7 @@
 :root {
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
-    --dash-blue: #282b68;
+    --dash-blue: #2e2868;
     --dash-symbols: #ffffff;
     --dash-title: #fff;
     --dash-text: #1eafff;
@@ -9,6 +9,7 @@
     --header-logos: #282b68;
     --search-bar: #dfdff2;
     --project-background: #e2e8f0;
+    --gold: #facc15;
 }
 
 body {
@@ -68,7 +69,7 @@ input[type="search"] {
     grid-row: 1 / 2;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     justify-content: flex-end;
     padding-right: 30px;
 }
@@ -83,7 +84,7 @@ input[type="search"] {
     /* border: 1px solid red; */
     width: 50px;
     height: 50px;
-    background-color: var(--dash-text);
+    background-color: var(--gold);
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -95,7 +96,7 @@ input[type="search"] {
 }
 
 #profile-notification {
-    color: var(--d);
+    color: var(--dash-blue);
 }
 
 .welcome {
@@ -111,7 +112,7 @@ input[type="search"] {
 .welcome-image {
     width: 70px;
     height: 70px;
-    background-color: var(--dash-text);
+    background-color: var(--gold);
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -139,6 +140,24 @@ input[type="search"] {
 .options {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    padding-right: 30px;
+    align-self: center;
+    justify-self: end;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons{
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background: var(--dash-blue);
+    color: var(--dash-title);
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 20px;
+    width: 90px;
+    
 }
 
 .sidebar {
