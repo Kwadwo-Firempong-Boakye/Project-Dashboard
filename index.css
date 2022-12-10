@@ -27,7 +27,7 @@ header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 2fr;
     grid-template-rows: repeat(2, 1fr);
     border-bottom: 4px solid #cecee2;
 }
@@ -65,6 +65,35 @@ input[type="search"] {
 .profile {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+#prof-img {
+    color: var(--dash-blue);
+    font-size: 40px;
+}
+
+.profile p {
+    font-weight: bold;
+    color: var(--header-logos);
+}
+
+.profile-image {
+    /* border: 1px solid red; */
+    width: 50px;
+    height: 50px;
+    background-color: var(--dash-text);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+#profile-notification {
+    color: var(--d);
 }
 
 .welcome {
