@@ -30,6 +30,7 @@ header {
     grid-template-columns: 4fr 2fr;
     grid-template-rows: repeat(2, 1fr);
     border-bottom: 4px solid #cecee2;
+    padding-bottom: 12px;
 }
 
 .search {
@@ -72,10 +73,6 @@ input[type="search"] {
     padding-right: 30px;
 }
 
-#prof-img {
-    color: var(--dash-blue);
-    font-size: 40px;
-}
 
 .profile p {
     font-weight: bold;
@@ -92,6 +89,11 @@ input[type="search"] {
     place-items: center;
 }
 
+#prof-img {
+    color: var(--dash-blue);
+    font-size: 40px;
+}
+
 #profile-notification {
     color: var(--d);
 }
@@ -99,6 +101,39 @@ input[type="search"] {
 .welcome {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    padding-left: 30px;
+    width: 70%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.welcome-image {
+    width: 70px;
+    height: 70px;
+    background-color: var(--dash-text);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    
+}
+
+#welcome-img {
+    color: var(--dash-blue);
+    font-size: 60px;
+}
+
+
+.micro-hello {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.macro-hello {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2px;
 }
 
 .options {
