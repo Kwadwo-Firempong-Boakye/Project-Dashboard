@@ -289,9 +289,6 @@ input[type="search"] {
     gap: 10px;
 }
 
-.trending-container {
-    /* border: 1px solid blue */
-}
 
 .trending-container h4{
     margin: 10px 0;
