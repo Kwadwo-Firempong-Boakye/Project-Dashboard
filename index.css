@@ -212,7 +212,7 @@ input[type="search"] {
     grid-row: 2 / 3;
     background: var(--search-bar);
     display: grid;
-    grid-template-columns: 3fr 1.2fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 50px 1fr;
     gap: 10px 30px;
 }
@@ -270,5 +270,31 @@ input[type="search"] {
 }
 
 .announce-trend-container {
-    padding-right: 20px;
+    display: grid;
+    grid-template-rows: repeat(2, 315px);
+    gap: 30px;
+    padding-right: 30px;
+}
+
+.announcement {
+    background: #fff;
+    box-shadow: 3px 5px 2px #cecee2;
+    padding: 20px;
+}
+
+.trending {
+    background: #fff;
+    box-shadow: 3px 5px 2px #cecee2;
+}
+
+.announce p {
+    font-size: 10px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.announce h5 {
+    margin: 0;
 }
