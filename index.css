@@ -272,6 +272,7 @@ input[type="search"] {
     grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
     gap: 25px;
     padding-right: 30px;
+    padding-bottom: 30px;
 }
 
 .announcement {
